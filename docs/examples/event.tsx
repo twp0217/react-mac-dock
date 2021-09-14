@@ -1,5 +1,6 @@
 /**
  * compact: true
+ * iframe: 660
  */
 
 import React from 'react';
