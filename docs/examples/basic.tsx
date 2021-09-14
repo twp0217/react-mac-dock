@@ -8,13 +8,34 @@ import './index.less';
 
 export default () => {
   const items: MacDockItem[] = [
-    { label: 'nautilus', icon: '/demo/nautilus.png' },
-    { label: 'opera', icon: '/demo/opera.png' },
-    { label: 'addressbook', icon: '/demo/addressbook.png' },
-    { label: 'dictionary', icon: '/demo/dictionary.png' },
-    { label: 'update', icon: '/demo/update.png' },
-    { label: 'settings', icon: '/demo/settings.png' },
-    { label: 'trash', icon: '/demo/trash.png' },
+    {
+      label: 'nautilus',
+      icon: 'https://twp0217.github.io/react-mac-dock/demo/nautilus.png',
+    },
+    {
+      label: 'opera',
+      icon: 'https://twp0217.github.io/react-mac-dock/demo/opera.png',
+    },
+    {
+      label: 'addressbook',
+      icon: 'https://twp0217.github.io/react-mac-dock/demo/addressbook.png',
+    },
+    {
+      label: 'dictionary',
+      icon: 'https://twp0217.github.io/react-mac-dock/demo/dictionary.png',
+    },
+    {
+      label: 'update',
+      icon: 'https://twp0217.github.io/react-mac-dock/demo/update.png',
+    },
+    {
+      label: 'settings',
+      icon: 'https://twp0217.github.io/react-mac-dock/demo/settings.png',
+    },
+    {
+      label: 'trash',
+      icon: 'https://twp0217.github.io/react-mac-dock/demo/trash.png',
+    },
   ];
 
   return (
