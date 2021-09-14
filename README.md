@@ -58,14 +58,15 @@ export default () => {
 
 ### MacDockProps
 
-| 名称       | 类型                                                                | 默认值 | 说明             |
-| ---------- | ------------------------------------------------------------------- | ------ | ---------------- |
-| className  | string                                                              | -      | 类名             |
-| style      | React.CSSProperties                                                 | -      | 样式             |
-| items      | MacDockItem[]                                                       | -      | 数据             |
-| placement  | `top` \| `bottom` \| `left` \| `right`                              | `top`  | 位置             |
-| renderItem | (item: MacDockItem, originNode: React.ReactNode) => React.ReactNode | -      | 自定义渲染列表项 |
-| onClick    | (item: MacDockItem) => void                                         | -      | 点击节点时的回调 |
+| 名称       | 类型                                                                | 默认值    | 说明             |
+| ---------- | ------------------------------------------------------------------- | --------- | ---------------- |
+| className  | string                                                              | -         | 类名             |
+| style      | React.CSSProperties                                                 | -         | 样式             |
+| placement  | `top` \| `bottom` \| `left` \| `right`                              | `bottom`  | 位置             |
+| size       | `default` \| `small` \| number                                      | `default` | 图标大小         |
+| items      | MacDockItem[]                                                       | -         | 数据             |
+| renderItem | (item: MacDockItem, originNode: React.ReactNode) => React.ReactNode | -         | 自定义渲染列表项 |
+| onClick    | (item: MacDockItem) => void                                         | -         | 点击节点时的回调 |
 
 ## 支持
 

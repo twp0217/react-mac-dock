@@ -14,7 +14,8 @@ export interface MacDockProps {
   className?: string;
   style?: React.CSSProperties;
   placement?: Placement;
-  items: MacDockItem[];
+  size?: 'default' | 'small' | number;
+  items?: MacDockItem[];
   renderItem?: RenderItem;
   onClick?: (item: MacDockItem) => void;
 }

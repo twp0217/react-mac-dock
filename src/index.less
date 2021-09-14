@@ -1,6 +1,8 @@
+@dock-background-color: #fff;
+@dock-size: 64px;
+@dock-size-sm: 40px;
 @current-scale: 1.6;
 @current-margin: 1rem;
-@color: #fff;
 
 .center() {
   display: flex;
@@ -12,8 +14,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: fade(@color, 15%);
-  border: 1px solid fade(@color, 50%);
+  background-color: fade(@dock-background-color, 15%);
+  border: 1px solid fade(@dock-background-color, 50%);
   border-radius: 5px;
 
   .center();
@@ -71,7 +73,6 @@
   }
 
   &-placement-left {
-    // transform-origin: center bottom;
     left: 0;
 
     .mac-dock-item {
@@ -80,7 +81,6 @@
   }
 
   &-placement-right {
-    // transform-origin: center bottom;
     right: 0;
 
     .mac-dock-item {
@@ -89,11 +89,16 @@
   }
 
   &-item {
-    width: 64px;
-    height: 64px;
+    width: @dock-size;
+    height: @dock-size;
     cursor: pointer;
     padding: 0.5rem;
     transition: all 0.2s;
+
+    &&-small {
+      width: @dock-size-sm;
+      height: @dock-size-sm;
+    }
 
     &-current {
       transform: scale(@current-scale);
